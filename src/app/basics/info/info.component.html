@@ -1,7 +1,47 @@
 <section class="info">
   <div>
-    <h4><span class="title">项目名称</span><span class="details">项目名称项目名称</span><span class="edit"><app-edit></app-edit></span></h4>
+    <h4><span class="title">项目名称</span><span class="details">项目名称项目名称</span><span class="edit" (click)="edit(editName)"><app-edit></app-edit></span></h4>
     <p><span class="title">项目编号</span><span class="details">BSD-1956234</span></p>
-    <p><span class="title">项目周期</span><span class="details">2017.11.10-2018.4.30</span><span class="period">【调整周期】</span></p>
+    <p><span class="title">项目周期</span><span class="details">2017.11.10-2018.4.30</span><span class="period" (click)="edit(period)">【调整周期】</span></p>
   </div>
 </section>
+
+
+<ng-template #editName>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">修改项目名称</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body edit-name">
+    <div>
+      <label for="name">项目名称:</label>
+      <input type="text" placeholder="请输入项目名称" id="name" [(ngModel)]="name">
+    </div>
+  </div>
+  <div class="modal-bottom">
+    <button (click)="modalRef.hide()">取消</button>
+    <button (click)="modalRef.hide()">确定</button>
+  </div>
+</ng-template>
+
+<ng-template #period>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">修改项目周期</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body period">
+    <p class="declare">说明：项目周期调整后，预算需重新设置</p>
+    <p class="date">
+      <label>项目周期</label>
+      <input class="form-control" #drp="bsDaterangepicker" bsDaterangepicker [(ngModel)]="bsRangeValue">
+    </p>
+  </div>
+  <div class="modal-bottom">
+    <button (click)="modalRef.hide()">取消</button>
+    <button (click)="modalRef.hide()">确定</button>
+  </div>
+</ng-template>

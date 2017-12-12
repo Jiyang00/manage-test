@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, TemplateRef} from '@angular/core';
+import {BsModalService, BsModalRef} from "ngx-bootstrap";
 
 @Component({
   selector: 'app-info',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent implements OnInit {
+  modalRef: BsModalRef;
+  name;
+  bsRangeValue: any = [new Date(2017, 7, 4), new Date(2017, 7, 20)];
+  constructor(private modalService: BsModalService) {}
 
-  constructor() { }
+  edit(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template);
+    this.modalService.onHidden.subscribe((reason: string,e,a,d,c) => {
+      console.log(reason,e,a,d,c);
+    })
+  }
 
   ngOnInit() {
   }
-
 }

@@ -42,3 +42,23 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+label {
+  font-size: 14px;
+  color: #393939;
+}
+input::-webkit-input-placeholder { /* WebKit browsers*/
+  color:#393939;
+  font-size:14px;
+}
+input:-moz-placeholder {  /* Mozilla Firefox 4 to 18*/
+  color:#393939;
+  font-size:14px;
+}
+input::-moz-placeholder {  /* Mozilla Firefox 19+*/
+  color:#393939;
+  font-size:14px;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+*/
+  color:#393939;
+  font-size:14px;
+}

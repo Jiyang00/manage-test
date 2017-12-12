@@ -32,3 +32,40 @@
     cursor: pointer;
   }
 }
+.edit-name {
+  padding: 48px 0 82px 20px;
+  label {
+    margin-right: 10px;
+  }
+  input {
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    outline: none;
+    border: 1px solid #d8d8d8;
+  }
+}
+.period {
+    .declare {
+        width: 351px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 5px;
+        background: #EAF2FF;
+        border: 1px solid #A9B6CD;
+        color: #A9B6CD;
+        font-size: 12px;
+    }
+    .date {
+        label {
+
+        }
+        input {
+            width: 200px;
+            display: inline-block;
+            height: 15px;
+            border-radius: 0;
+        }
+    }
+}
