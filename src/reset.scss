@@ -16,6 +16,7 @@ time, mark, audio, video {
   border: 0;
   font-family:"PingFang SC","Heiti SC","Microsoft YaHei","Helvetica Neue","Open Sans", Arial,"Hiragino Sans GB","微软雅黑",STHeiti,SimSun,sans-serif;
   font-size: 100%;
+  box-sizing: content-box;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
