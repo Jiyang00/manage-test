@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ChartsComponent } from './charts/charts.component';
 import { ChartsModule } from 'ng2-charts';
-import {ButtonsModule} from "ngx-bootstrap";
 import {FormsModule} from "@angular/forms";
+import { ButtonsModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,8 @@ import {FormsModule} from "@angular/forms";
   imports: [
     BrowserModule,
     ChartsModule,
-    FormsModule
+    FormsModule,
+    ButtonsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

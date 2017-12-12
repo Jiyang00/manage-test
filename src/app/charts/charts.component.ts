@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./charts.component.scss']
 })
 export class ChartsComponent implements OnInit {
-  chartLabels: string[] = [];
+  // chartLabels: string[] = [ 'cccc'];
   chartData: number[] = [ 100];
   chartType = 'doughnut';
   // events
