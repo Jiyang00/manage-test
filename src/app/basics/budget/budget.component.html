@@ -1,8 +1,7 @@
 <section class="budget">
-  <div style="display: block">
+  <div style="display: block;width: 100px;">
     <canvas baseChart
             [data]="doughnutChartData"
-            [labels]="doughnutChartLabels"
             [chartType]="doughnutChartType"
             (chartHover)="chartHovered($event)"
             (chartClick)="chartClicked($event)"></canvas>

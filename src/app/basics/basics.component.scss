@@ -1,3 +1,26 @@
-app-info {
+.app-info {
   width: 490px;
+  height: 169px;
+  background-color: #f8f8f8;
+  border-right: 1px solid #EEEEEE;
+}
+.app-budget {
+  width: 358px;
+  height: 169px;
+  background-color: #f8f8f8;
+  border-right: 1px solid #EEEEEE;
+}
+.app-toggle {
+  width: 246px;
+  height: 169px;
+  background-color: #f8f8f8;
+}
+.basics {
+  div {
+    float: left ;
+  }
+}
+.basics-bottom {
+  background-color: #f8f8f8;
+  width: 1096px;
 }

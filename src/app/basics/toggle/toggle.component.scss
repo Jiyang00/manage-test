@@ -1,4 +1,5 @@
 .toggle {
+  padding: 14px 0 18px;
   .btn {
     background: #33CD5F;
     width: 60px;
@@ -10,8 +11,19 @@
     padding: 0;
     cursor: pointer;
     margin: 0 auto;
+    display: block;
   }
   .status {
-
+    font-size: 14px;
+    color: #393939;
+    text-align: center;
+    margin-top: 11px;
+  }
+  .message {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 26px;
+    color: #488AFF;
+    cursor: pointer;
   }
 }

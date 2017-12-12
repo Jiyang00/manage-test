@@ -9,6 +9,7 @@ import {FormsModule} from "@angular/forms";
 import { ButtonsModule } from 'ngx-bootstrap';
 import { BudgetComponent } from './basics/budget/budget.component';
 import { ToggleComponent } from './basics/toggle/toggle.component';
+import { TotalComponent } from './basics/total/total.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ToggleComponent } from './basics/toggle/toggle.component';
     InfoComponent,
     ChartsComponent,
     BudgetComponent,
-    ToggleComponent
+    ToggleComponent,
+    TotalComponent,
   ],
   imports: [
     BrowserModule,
