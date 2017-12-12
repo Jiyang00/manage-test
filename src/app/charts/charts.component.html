@@ -1,0 +1,17 @@
+<div style="display: flex">
+  <div class="charts" style="width: 300px;">
+    <canvas baseChart
+            [data]="chartData"
+            [chartType]="chartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+  </div>
+  <div>
+    <ul style="flex: 1;justify-content: center;">
+      <li>111</li>
+      <li>111</li>
+      <li>111</li>
+    </ul>
+  </div>
+</div>
+
