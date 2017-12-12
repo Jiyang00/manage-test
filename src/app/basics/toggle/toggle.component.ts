@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-toggle',
-  templateUrl: './toggle.component.html',
-  styleUrls: ['./toggle.component.scss']
+    selector: 'app-toggle',
+    templateUrl: './toggle.component.html',
+    styleUrls: ['./toggle.component.scss']
 })
 export class ToggleComponent implements OnInit {
-  toggle = false;
-  constructor() { }
+    toggle = false;
 
-  ngOnInit() {
-  }
+    constructor() {
+    }
+
+    ngOnInit() {
+    }
 
 }

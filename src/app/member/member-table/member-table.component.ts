@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-member-table',
-  templateUrl: './member-table.component.html',
-  styleUrls: ['./member-table.component.scss']
+    selector: 'app-member-table',
+    templateUrl: './member-table.component.html',
+    styleUrls: ['./member-table.component.scss']
 })
 export class MemberTableComponent implements OnInit {
 
-  constructor() { }
+    constructor() {
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 
 }

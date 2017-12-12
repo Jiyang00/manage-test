@@ -1,16 +1,18 @@
 <div class="doughnutChart">
-  <div class="chart">
-    <canvas baseChart
-            [datasets]="datasets"
-            [options]="options"
-            [chartType]="chartType"
-            (chartHover)="chartHovered($event)"
-            (chartClick)="chartClicked($event)"></canvas>
-  </div>
-  <div class="titles" *ngIf="showLabel">
-    <ul>
-      <li *ngFor="let item of chartLabels;let $index = index"><i [ngStyle]="{'color': colors[$index]}">●</i>{{item}}</li>
-    </ul>
-  </div>
+    <div class="chart">
+        <canvas baseChart
+                [datasets]="datasets"
+                [colors]="myColors"
+                [options]="options"
+                [chartType]="chartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+    </div>
+    <div class="titles" *ngIf="showLabel">
+        <ul>
+            <li *ngFor="let item of chartLabels;let $index = index"><i [ngStyle]="{'color': colors[$index]}">●</i>{{item}}
+            </li>
+        </ul>
+    </div>
 </div>
 
