@@ -1,5 +1,5 @@
 <section class="toggle">
-  <button class="btn">
+  <button class="btn" (click)="toggle = !toggle" [ngClass]="{stop: toggle}">
     {{toggle?"停用":"启用"}}
   </button>
   <p class="status">{{toggle?"运行中":"等待开始"}}</p>

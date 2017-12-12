@@ -1,5 +1,8 @@
 .total {
   padding: 14px 20px 16px;
+  >p {
+    position: relative;
+  }
   .title {
     font-family: PingFangSC-Regular;
     font-size: 14px;
@@ -14,5 +17,10 @@
     .price {
       margin-left: 10px;
     }
+  }
+  .edit {
+    margin-left: 20px;
+    position: absolute;
+    top: -4px;
   }
 }

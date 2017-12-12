@@ -10,6 +10,9 @@ import { ButtonsModule } from 'ngx-bootstrap';
 import { BudgetComponent } from './basics/budget/budget.component';
 import { ToggleComponent } from './basics/toggle/toggle.component';
 import { TotalComponent } from './basics/total/total.component';
+import { EditComponent } from './edit/edit.component';
+import { MemberComponent } from './member/member.component';
+import { MemberTableComponent } from './member/member-table/member-table.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { TotalComponent } from './basics/total/total.component';
     BudgetComponent,
     ToggleComponent,
     TotalComponent,
+    EditComponent,
+    MemberComponent,
+    MemberTableComponent,
   ],
   imports: [
     BrowserModule,
