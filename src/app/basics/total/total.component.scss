@@ -1,0 +1,26 @@
+.total {
+  padding: 14px 20px 16px;
+  >p {
+    position: relative;
+  }
+  .title {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #9B9B9B;
+    letter-spacing: 0;
+    margin-right: 22px;
+  }
+  .detail {
+    font-size: 14px;
+    color: #393939;
+    margin-left: 20px;
+    .price {
+      margin-left: 10px;
+    }
+  }
+  .edit {
+    margin-left: 20px;
+    position: absolute;
+    top: -4px;
+  }
+}

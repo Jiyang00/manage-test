@@ -1,0 +1,11 @@
+.member {
+  .header {
+    margin-bottom: 12px;
+    position: relative;
+    .edit {
+      position: absolute;
+      margin-left: 20px;
+      top: -4px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<section class="budget">
+  <div style="display: block;width: 100px;">
+    <canvas baseChart
+            [data]="doughnutChartData"
+            [chartType]="doughnutChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+  </div>
+  <app-edit></app-edit>
+</section>
+

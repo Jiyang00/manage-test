@@ -1,0 +1,22 @@
+table {
+  border: 1px solid #eee;
+  thead {
+    background: #A9B6CD;
+    color: #fff;
+    th {
+      font-weight: normal;
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+  }
+  tbody {
+
+  }
+  tr {
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #393939;
+  }
+}
