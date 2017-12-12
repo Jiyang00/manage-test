@@ -7,13 +7,14 @@ import {ChartsComponent} from './charts/charts.component';
 import {ChartsModule} from 'ng2-charts';
 import {FormsModule} from "@angular/forms";
 import {ButtonsModule, ModalModule, BsDatepickerModule} from 'ngx-bootstrap';
-import {BudgetComponent} from './basics/budget/budget.component';
-import {ToggleComponent} from './basics/toggle/toggle.component';
-import {TotalComponent} from './basics/total/total.component';
-import {EditComponent} from './edit/edit.component';
-import {MemberComponent} from './member/member.component';
-import {MemberTableComponent} from './member/member-table/member-table.component';
-import {ProjectManageComponent} from './project-manage/project-manage.component';
+import {SearchBtnComponent} from './project-manage/search-btn/search-btn.component';
+import {BudgetComponent} from "./basics/budget/budget.component";
+import {ToggleComponent} from "./basics/toggle/toggle.component";
+import {TotalComponent} from "./basics/total/total.component";
+import {EditComponent} from "./edit/edit.component";
+import {MemberComponent} from "./member/member.component";
+import {MemberTableComponent} from "./member/member-table/member-table.component";
+import {ProjectManageComponent} from "./project-manage/project-manage.component";
 
 @NgModule({
     declarations: [
@@ -28,7 +29,8 @@ import {ProjectManageComponent} from './project-manage/project-manage.component'
         MemberComponent,
         MemberTableComponent,
         ChartsComponent,
-        ProjectManageComponent
+        ProjectManageComponent,
+        SearchBtnComponent
     ],
     imports: [
         BrowserModule,

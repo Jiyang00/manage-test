@@ -8,13 +8,16 @@
     </p>
     <div class="content">
         <div class="tabs">
-            <a href="javascript:void(0)">全部</a>
-            <a href="javascript:void(0)">运行中</a>
-            <a href="javascript:void(0)">等待开始</a>
-            <a href="javascript:void(0)">已停用</a>
-            <a href="javascript:void(0)">已到期</a>
-            <input type="text">
-            <button>搜索</button>
+            <div>
+                <a href="javascript:void(0)">全部</a>
+                <a href="javascript:void(0)">运行中</a>
+                <a href="javascript:void(0)">等待开始</a>
+                <a href="javascript:void(0)">已停用</a>
+                <a href="javascript:void(0)">已到期</a>
+            </div>
+            <div>
+                <app-search-btn></app-search-btn>
+            </div>
         </div>
         <div class="charts">
             <div class="chartItem" *ngFor="let item of projectList">
