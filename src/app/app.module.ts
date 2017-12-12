@@ -14,6 +14,7 @@ import { EditComponent } from './edit/edit.component';
 import { MemberComponent } from './member/member.component';
 import { MemberTableComponent } from './member/member-table/member-table.component';
 import { ProjectManageComponent } from './project-manage/project-manage.component';
+import { SearchBtnComponent } from './project-manage/search-btn/search-btn.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProjectManageComponent } from './project-manage/project-manage.componen
     MemberComponent,
     MemberTableComponent,
     ChartsComponent,
-    ProjectManageComponent
+    ProjectManageComponent,
+    SearchBtnComponent
   ],
   imports: [
     BrowserModule,
