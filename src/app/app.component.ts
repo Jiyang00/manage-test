@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   singleModel: string = '1';
+
+  projectManage () {
+    alert(123)
+  }
 }

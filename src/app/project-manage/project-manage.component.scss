@@ -1,0 +1,43 @@
+.projectManage{
+  width: 100%;
+  padding: 10px;
+  .desCon{
+    display: inline-block;
+    background: #EAF2FF;
+    border: 1px solid #A9B6CD;
+    line-height: 30px;
+    font-size: 12px;
+    color: #A9B6CD;
+    padding: 0 14px;
+    margin: 21px 0 30px;
+  }
+  .content{
+    .tabs{
+      margin-bottom: 20px;
+      border-bottom: 1px solid #EEEEEE;
+    }
+  }
+  .charts{
+    display: flex;
+    .chartItem{
+      padding: 10px;
+      background: #FFFFFF;
+      border: 1px solid #EEEEEE;
+      min-width: 360px;
+      width: 360px;
+      margin-right: 18px;
+      margin-bottom: 20px;
+      >h3{
+        font-size: 17px;
+        color: #488AFF;
+        font-weight: 500;
+      }
+      >p{
+        margin: 13px 0;
+        font-size: 14px;
+        color: #9B9B9B;
+      }
+    }
+  }
+
+}

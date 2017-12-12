@@ -1,16 +1,15 @@
-<div style="display: flex">
-  <div class="charts" style="width: 300px;">
+<div class="doughnutChart">
+  <div class="chart">
     <canvas baseChart
-            [data]="chartData"
+            [datasets]="datasets"
+            [options]="options"
             [chartType]="chartType"
             (chartHover)="chartHovered($event)"
             (chartClick)="chartClicked($event)"></canvas>
   </div>
-  <div>
-    <ul style="flex: 1;justify-content: center;">
-      <li>111</li>
-      <li>111</li>
-      <li>111</li>
+  <div class="titles" *ngIf="showLabel">
+    <ul>
+      <li *ngFor="let item of chartLabels;let $index = index"><i [ngStyle]="{'color': colors[$index]}">●</i>{{item}}</li>
     </ul>
   </div>
 </div>

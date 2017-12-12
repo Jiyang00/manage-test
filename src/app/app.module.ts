@@ -13,6 +13,7 @@ import { TotalComponent } from './basics/total/total.component';
 import { EditComponent } from './edit/edit.component';
 import { MemberComponent } from './member/member.component';
 import { MemberTableComponent } from './member/member-table/member-table.component';
+import { ProjectManageComponent } from './project-manage/project-manage.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,8 @@ import { MemberTableComponent } from './member/member-table/member-table.compone
     EditComponent,
     MemberComponent,
     MemberTableComponent,
+    ChartsComponent,
+    ProjectManageComponent
   ],
   imports: [
     BrowserModule,
