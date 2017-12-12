@@ -16,7 +16,7 @@ export class ChartsComponent implements OnInit {
     layout: {
       padding: {
         left: 0,
-        right: 100,
+        right: 160,
         top: 0,
         bottom: 0
       }
